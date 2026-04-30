@@ -5,20 +5,20 @@
 class Synth < Formula
   desc "synth - synthetic training data at scale"
   homepage "https://synthlabs.ai"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nlile/synth/releases/download/v0.1.0/synth_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e167b512d14044ef21a7991e1244519ded474be138a44e1cc07a0d87f62f0428"
+      url "https://github.com/nlile/synth/releases/download/v0.1.1/synth_0.1.1_darwin_amd64.tar.gz"
+      sha256 "0d33d345d4fbe2e4d4dc2df8bea4fd0f5340d9a46ca85a589ec369024eb5af06"
 
       define_method(:install) do
         bin.install "synth"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nlile/synth/releases/download/v0.1.0/synth_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c154e544ae81b935aa01ae0a55360d121d4b8de61e860459d08402934f4b5724"
+      url "https://github.com/nlile/synth/releases/download/v0.1.1/synth_0.1.1_darwin_arm64.tar.gz"
+      sha256 "d14a7d59f15c8a601f6e7781ceda67dddf850cd94f8fa0095bb0c6319930e886"
 
       define_method(:install) do
         bin.install "synth"
@@ -28,15 +28,15 @@ class Synth < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nlile/synth/releases/download/v0.1.0/synth_0.1.0_linux_amd64.tar.gz"
-      sha256 "639ebe6d2f5814b6ba03fd12237a7eabf493a327c296822520d165fa050a2bbc"
+      url "https://github.com/nlile/synth/releases/download/v0.1.1/synth_0.1.1_linux_amd64.tar.gz"
+      sha256 "12d0542e0625ce601c3abd9e1cbf702b37ab38d530eb48d185e82755930ab784"
       define_method(:install) do
         bin.install "synth"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nlile/synth/releases/download/v0.1.0/synth_0.1.0_linux_arm64.tar.gz"
-      sha256 "22156373b258a39cd3e9fbae1152ce94bb8bd0329975aa2de84b41e1542689ea"
+      url "https://github.com/nlile/synth/releases/download/v0.1.1/synth_0.1.1_linux_arm64.tar.gz"
+      sha256 "240138494448373ddb6e8663b2b18870049515f48e40ea7413459ea68ba7bfb6"
       define_method(:install) do
         bin.install "synth"
       end
