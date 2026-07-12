@@ -9,22 +9,22 @@ cask "synth-harbor" do
   on_macos do
     on_intel do
       sha256 "119fe2d6f62d91464e63dac4d30bf7329f9f9d2913380e623920c2e0abdfa088"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth-harbor_#{version}_darwin_amd64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth-harbor_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
       sha256 "56fa409898cdeb394c50183fb0b2f3c67aeedf4b7b886f8cbed12d2fe8c69279"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth-harbor_#{version}_darwin_arm64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth-harbor_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
       sha256 "f17857bc1e615d59ab07598e828a9e78397c42247aa58b99cc594d2d6809a903"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth-harbor_#{version}_linux_amd64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth-harbor_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
       sha256 "ffde868f85069b5896b54926d7cc91438fe4dce258a64b3775a3ca498e592bb8"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth-harbor_#{version}_linux_arm64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth-harbor_#{version}_linux_arm64.tar.gz"
     end
   end
 

@@ -9,22 +9,22 @@ cask "synth" do
   on_macos do
     on_intel do
       sha256 "ead453f14915fbb0647cd915ed313271bd35b4b922f77ab6eee66ae1e8e452e1"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth_#{version}_darwin_amd64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
       sha256 "f40303e9f6271a5a58486297f89463eca72075d2f6af7020612dcc9ff0548ce0"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth_#{version}_darwin_arm64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
       sha256 "d62d98fa8067bc32b84238d56d365830994c0e9022d365dc92445fdd8538fdce"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth_#{version}_linux_amd64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
       sha256 "5a49eca5f87c17f81d12a41d7d426f101a50537ff3b495c95631923668dfc00f"
-      url "https://github.com/SynthLabsAI/synth/releases/download/v#{version}/synth_#{version}_linux_arm64.tar.gz"
+      url "https://github.com/SynthLabsAI/synth-releases/releases/download/v#{version}/synth_#{version}_linux_arm64.tar.gz"
     end
   end
 
