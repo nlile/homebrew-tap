@@ -2,6 +2,10 @@
 cask "synth-harbor" do
   version "0.0.1-alpha.2"
 
+  deprecate! date: "2026-07-16",
+    because: "has been replaced by the unified synth cask; Harbor commands now live under `synth harbor ...`",
+    replacement_cask: "synth"
+
   on_macos do
     on_intel do
       sha256 "8909f6954e29c922d48b56f795dc4225875592eec40f766e998756d7f81a802f"
@@ -34,6 +38,21 @@ cask "synth-harbor" do
 
   livecheck do
     skip "Auto-generated on release."
+  end
+
+  caveats do
+    <<~EOS
+      `synth-harbor` is retired in favor of the unified `synth` CLI.
+
+      Migration:
+        brew uninstall --cask synth-harbor
+        brew install --cask synth
+
+      Command examples:
+        synth-harbor auth login        -> synth auth login
+        synth-harbor job start         -> synth harbor job start
+        synth-harbor adapter review    -> synth harbor adapter review
+    EOS
   end
 
   binary "synth-harbor"
