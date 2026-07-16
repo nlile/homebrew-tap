@@ -2,8 +2,8 @@
 
 This tap ships the unified `synth` cask.
 
-`synth-harbor` is retained only as a deprecated migration path for old alpha
-installs and points users to `synth`.
+The legacy `synth-harbor` cask is disabled as of 2026-07-16 and points users
+to `synth`.
 
 Install:
 

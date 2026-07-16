@@ -2,8 +2,8 @@
 cask "synth-harbor" do
   version "0.0.1-alpha.2"
 
-  deprecate! date: "2026-07-16",
-    because: "has been replaced by the unified synth cask; Harbor commands now live under `synth harbor ...`",
+  disable! date: "2026-07-16",
+    because: :discontinued,
     replacement_cask: "synth"
 
   on_macos do
@@ -42,7 +42,7 @@ cask "synth-harbor" do
 
   caveats do
     <<~EOS
-      `synth-harbor` is retired in favor of the unified `synth` CLI.
+      `synth-harbor` is disabled in favor of the unified `synth` CLI.
 
       Migration:
         brew uninstall --cask synth-harbor
@@ -51,7 +51,7 @@ cask "synth-harbor" do
       Command examples:
         synth-harbor auth login        -> synth auth login
         synth-harbor job start         -> synth harbor job start
-        synth-harbor adapter review    -> synth harbor adapter review
+        synth-harbor adapter review    -> synth harbor local -- adapter review
     EOS
   end
 
